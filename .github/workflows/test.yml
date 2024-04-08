@@ -6,6 +6,8 @@ jobs:
         steps:
             - name: Get code or scm
               uses: actions/checkout@v3
+            - name: Action 7z
+              uses: edgarrc/action-7z@v1.0.5
             - name: Install NodeJs
               uses: actions/setup-node@v4
               with:
