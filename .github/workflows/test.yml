@@ -5,11 +5,11 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: Get code or scm
-              uses: actions/checkout@v4
+              uses: actions/checkout@v3
             - name: Install NodeJs
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v3
               with:
-                node-version: 20
+                node-version: 16
                 cache: 'npm'
             - name: Install Dependencies
               run: npm ci
